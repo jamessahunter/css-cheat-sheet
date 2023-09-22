@@ -1,25 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Cheat Sheet</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
-</head>
-<body>
+<html>
+  <head>
+    <title>CSS Snippet Cheatsheet</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>CSS Style Cheat Sheet</h1>
-        <p> 
-            Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page!
-            Select any snippet below and it'll automatically select all of the code for you to copy.
-        </p>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code?
+      </p>
     </header>
+
     <main>
-        
-
-
-
+      <!-- Class Project boxes -->
+      <div class="boxes">
+        <section class="card">
+          <header>Flexbor row</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.row{ <br>
+                display:flex; <br>
+                flex-direction:row;<br>
+                flex-wrap:wrap; <br>
+                } 
+              </code>
+            </section>
+        </section>
+        <section class="card">
+          <header>Flexbox Column</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.column{ <br>
+                display:flex; <br>
+                flex-direction:column;<br>
+                } 
+              </code>
+            </section>
+        </section>
+        <section class="card">
+          <header>CSS Grid Layout</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.grid{ <br>
+                display:grid; <br>
+                widht:100%<br>
+                grid-template-columns:repeat(12,1fr); <br>
+                } 
+              </code>
+            </section>
+        </section>
+        <section class="card">
+          <header>Linear Gradients</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.linear-gradient-background{ <br>
+                backgroung-image: linear-gradient( <br>
+                rgba(232,102,236,0.3)0%<br>
+                rgba(232,102,236,0.6)100%);<br>
+                } 
+              </code>
+            </section>
+        </section>
+        <section class="card">
+          <header>Box Transition Glow</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.row{ <br>
+                display:flex; <br>
+                flex-direction:row;<br>
+                flex-wrap:wrap; <br>
+                } 
+              </code>
+            </section>
+        </section>
+        <section class="card">
+          <header>Overlay Card with Title</header>
+          <p>use these three properties to create a flex box layout</p>
+            <section class="code-box">
+              <code>.row{ <br>
+                display:flex; <br>
+                flex-direction:row;<br>
+                flex-wrap:wrap; <br>
+                } 
+              </code>
+            </section>
+        </section>
+      </div>
     </main>
-</body>
+
+
+    <footer>
+      <h3>
+        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
+        window!
+      </h3>
+    </footer>
+  </body>
 </html>

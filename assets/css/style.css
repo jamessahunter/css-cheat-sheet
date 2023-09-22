@@ -1,20 +1,103 @@
-:root{
-
+* {
+  box-sizing: 200px 200px;
 }
-body{
-    display: flex;
-    font-size: 16px;
+
+:root{
+    --box-text:rgb(255, 0, 212);
+    --white:white;
+    --border-radius:5px;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  color: var(--box-text);
+  font-size: larger;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+.boxes {
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.card {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: var(--white);
+  /* border-radius: var(--border-radius); */
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  transition:width 2s;
+
+}
+.card:hover{
+    width:300px;
+}
+.code-box{
+    display: flex;
+    height: 100%;
+    padding: 5px;
+    color: var(--white);
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(rgba(232,102,236,0.3), rgba(232,102,236,0.6));
+}
+.card header {
+    border-width: 1px;
+    border-color: var(--white);
+    border-radius: var(--border-radius);
+  padding: 20px;
 }
 
-header{
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 10px;
+.card p {
+  text-align: center;
+  color: var(--box-text);
 }
-h1{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+code{
+    padding: 5px;
+
 }
+@media screen and (max-width: 992px){
+    .card {
+      width: 45%;
+    }
+  }
+  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px){
+    .card {
+      width: 100%;
+    }
+  }
